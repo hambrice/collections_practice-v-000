@@ -43,11 +43,12 @@ def sum_array(array)
   sum
 end 
   
-def add_s(array)
-  array.collect do |string|
-    if string != array[1]
-     string << "s"
+
+ 
+ def add_s(array)
+   array.each_with_index.collect do |string, index|
+     if index != 2 
+       string << "s"
+     end
    end
- end
- array
  end
