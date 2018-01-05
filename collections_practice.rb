@@ -49,6 +49,8 @@ end
    array.collect.with_index do |string, index|
      if index != 1 
        string + "s"
+     else 
+       string
      end
    end
  end
